@@ -9,5 +9,7 @@ import com.curso.workshopmongo.domain.Post;
 @Repository
 public interface PostRepository extends MongoRepository<Post, String> {
 
+	Post findOne(String id);
+
 	
 }
