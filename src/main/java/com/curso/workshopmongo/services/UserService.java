@@ -33,8 +33,7 @@ public class UserService {
 		return repo.insert(obj);
 	}
 	
-	public void delete(String id) {
-		findById(id);
+	public void delete(User id) {
 		repo.delete(id);
 	}
 	
